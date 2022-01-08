@@ -1,0 +1,20 @@
+{
+  "name": "vue-back",
+  "version": "1.0.0",
+  "description": "vue-back",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoucumt/vue-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoucumt/vue-back/issues"
+  },
+  "homepage": "https://github.com/zhoucumt/vue-back#readme"
+}
