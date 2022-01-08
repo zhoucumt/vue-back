@@ -8,7 +8,13 @@ let users = [
 let server = http.createServer(function (req, res) {
   console.log(req.method, req.url);
   if (req.url == '/api/users') {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    // 解决跨域
+    // res.setHeader('Access-Control-Allow-Origin', '*');
+    res.writeHead(200, {
+      'content-type': 'text/html;charset=utf8',
+    });
+    // 解决乱码
+    res.setHeader('Content-Type', 'text/html;charset=UTF-8');
     res.end(JSON.stringify(users));
   } else {
     res.end('Now Found!');
