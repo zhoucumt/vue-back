@@ -105,5 +105,4 @@ dist
 
 .idea
 lib
-Dockerfile
 .dockerignore
